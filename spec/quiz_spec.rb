@@ -7,9 +7,6 @@ class Duck
     value < other.value
   end
 
-  def == other
-    other
-  end
   private
 
   def initialize(value = 0)
@@ -33,11 +30,11 @@ describe "Merge Sort Algorithm" do
     [].merge_sort.should == []
   end
 
-  it "should preserve the order of equal elements" do
+  it "sorting algorithm should be stable--i.e., should preserve the order of equal elements" do
     b = Duck.new(2)
     bb = Duck.new(2)
     c = Duck.new(4)
     a = Duck.new(1)
-    [bb, c, b, a].merge_sort.should == [a, bb, b, c]
+    [bb, c, b, a].merge_sort.should == [a, b, bb, c]
   end
 end
