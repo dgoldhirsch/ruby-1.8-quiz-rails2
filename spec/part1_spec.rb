@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe "Merge Sort Algorithm" do
+describe "Part 1" do
 
   it "should work with even number of elements" do
     [5, 2].merge_sort.should == [2, 5]

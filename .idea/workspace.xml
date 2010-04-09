@@ -4,9 +4,8 @@
     <list default="true" readonly="true" id="8833137b-0463-4249-aa4b-c359a3fdb738" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/eyecolor.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/quiz_spec.rb" afterPath="$PROJECT_DIR$/spec/part1_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quiz.rb" afterPath="$PROJECT_DIR$/quiz.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/eyecolor_spec.rb" afterPath="$PROJECT_DIR$/spec/eyecolor_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="quiz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,15 +29,6 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="extensions.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/extensions.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="0" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.rdoc" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.rdoc">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,10 +56,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eyecolor_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="eyecolor_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/eyecolor_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="4" selection-start="517" selection-end="517" vertical-scroll-proportion="0.4031008">
+            <state line="3" column="23" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="part1_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/part1_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="16" selection-start="39" selection-end="39" vertical-scroll-proportion="0.062015504">
               <folding />
             </state>
           </provider>
@@ -134,7 +133,6 @@
         <option value="$PROJECT_DIR$/lib/array_extensions.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/spec/spec.opts" />
-        <option value="$PROJECT_DIR$/spec/quiz_spec.rb" />
         <option value="$PROJECT_DIR$/lib/extensions.rb" />
         <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/spec/hair_spec.rb" />
@@ -142,6 +140,7 @@
         <option value="$PROJECT_DIR$/quiz.rb" />
         <option value="$PROJECT_DIR$/lib/eyecolor.rb" />
         <option value="$PROJECT_DIR$/spec/eyecolor_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/quiz_spec.rb" />
       </list>
     </option>
   </component>
@@ -466,15 +465,15 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="22" width="1440" height="810" extended-state="0" />
-    <editor active="true" />
+    <frame x="3" y="25" width="1440" height="810" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.60614526" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.60614526" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3840782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -553,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/quiz_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/extensions.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="0" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.0">
@@ -625,7 +617,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/eyecolor_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="517" selection-end="517" vertical-scroll-proportion="0.4031008">
+        <state line="3" column="23" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/part1_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="16" selection-start="39" selection-end="39" vertical-scroll-proportion="0.062015504">
           <folding />
         </state>
       </provider>
