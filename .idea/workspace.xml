@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager" verified="true">
-    <list default="true" readonly="true" id="8833137b-0463-4249-aa4b-c359a3fdb738" name="Default" comment="" />
-    <ignored path=".idea/workspace.xml" />
+    <list default="true" readonly="true" id="8833137b-0463-4249-aa4b-c359a3fdb738" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/extensions.rb" afterPath="$PROJECT_DIR$/lib/extensions.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+    </list>
     <ignored path="quiz.iws" />
+    <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +50,7 @@
       <file leaf-file-name="extensions.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/extensions.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="2387" selection-end="2387" vertical-scroll-proportion="1.3375959">
+            <state line="59" column="26" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.68350667">
               <folding />
             </state>
           </provider>
@@ -54,7 +59,7 @@
       <file leaf-file-name="array.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/rubystubs18/array.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="27" selection-start="925" selection-end="930" vertical-scroll-proportion="0.0">
+            <state line="1216" column="6" selection-start="32310" selection-end="32310" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,6 +129,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,8 +225,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
@@ -377,11 +382,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: quiz" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: quiz" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.quiz_spec" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.quiz_spec" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Production: quiz" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Development: quiz" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -454,10 +459,6 @@
           <url>file://$PROJECT_DIR$/spec/quiz_spec.rb</url>
           <line>19</line>
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/extensions.rb</url>
-          <line>47</line>
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -477,6 +478,20 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/quiz_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec.opts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///usr/local/lib/ruby/gems/1.8/gems/rspec-1.2.9/lib/spec/expectations/extensions/kernel.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
@@ -491,30 +506,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec.opts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/quiz_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs18/array.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="27" selection-start="925" selection-end="930" vertical-scroll-proportion="0.0">
+        <state line="1216" column="6" selection-start="32310" selection-end="32310" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/extensions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2387" selection-end="2387" vertical-scroll-proportion="1.3375959">
+        <state line="59" column="26" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.68350667">
           <folding />
         </state>
       </provider>

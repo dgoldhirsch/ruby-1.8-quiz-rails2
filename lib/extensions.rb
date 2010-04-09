@@ -20,9 +20,7 @@ class Array
     return result + list1 + list2
   end
 
-  # This is a fixed version of the given algorithm.
-  # It works although it may not be the easiest to read and does some unnecessary merging
-  # (sublists are merged even if the left sublist is obviously "before" the right sublist).
+  # This fixes the critical problems of bad_merge_sort without additional refactoring.
   def fixed_merge_sort
     return self if size <= 1
 
@@ -43,38 +41,29 @@ class Array
     return result + list1 + list2
   end
 
-  # Here's a version that is perhaps easier to read (depends on who's reading it :-)).
+  # Here's a version that is perhaps more idiomatic for Ruby and which may run faster
+  # (because it tries to optimize the rejoining of the sublists).
   def merge_sort
     return self if size <= 1
-    left = self[0, size/2].merge_sort
-    right = self[size/2, size - size/2].merge_sort # This will be the larger "half" if self.size is odd
-    result = left.join_to(right)
+    pieces = split_for_merge_sort
+    left = pieces[0].merge_sort
+    right = pieces[1].merge_sort # This will be the larger "half" if self.size is odd
+    result = left.join_for_merge_sort(right)
   end
 
-# Now, a couple of subroutines.  It is usually better to have small methods that each
-# do something very simple.  This makes them easy to document and to test.
-#
-# Break up an array into two "equal" halves (if odd number of elements,
-# the second "half" gets the extra element).  Examples:
-# [].split => []
-# [1] => [[], [1]]
-# [1, 2] => [[1], [2]]
-  def split
-    [[0, size/2], [size/2, size - size/2]]
+  # Break up an array into two "equal" halves (if odd number of elements,
+  # the second "half" gets the extra element).  Examples:
+  # [].split => []
+  # [1] => [[], [1]]
+  # [1, 2] => [[1], [2]]
+  def split_for_merge_sort
+    [self[0, size/2], self[size/2, size - size/2]]
   end
 
-# Merge two ordered sublists, e.g.:
-# merge [1, 3], [2, 4] => [1, 2, 3, 4]
-# Note microscopic optimization:  if left.last <= right.first, simply return left + right since
-# everything in left is already guaranteed in order and "before" everything in right.
-  def join_to(right)
-    return self if right.empty?
-    return right if empty?
-    return self + right if last <= right.first
-    complicated_join_to(right)
-  end
-
-  def complicated_join_to(right)
+  # Merge two ordered sublists, e.g.:
+  # merge [1, 3], [2, 4] => [1, 2, 3, 4]
+  def join_for_merge_sort(right)
+    return self + right if last <= right.first # I.e., all in left must be <= anything in right.
     result = []
     until empty? || right.empty? do
       if first <= right.first
