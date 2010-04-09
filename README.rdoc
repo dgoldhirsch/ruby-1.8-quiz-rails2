@@ -1,0 +1,144 @@
+== Questions
+
+Part 1.
+
+The following code is an attempt at a Ruby implementation of the
+"merge sort" algorithm (of course it's a sorting algorithm!).  There
+are two bugs in the code.  Fix the code and make any comments or code
+changes you see fit to improve readability.
+
+class Array
+ def merge_sort
+   return self if size < 1                    # Note B
+
+   list1 = self[0..(size/2)].merge_sort       # Note A
+   list2 = self[(size/2)+1..-1].merge_sort
+   result = []
+   until list1.empty? || list2.empty? do
+     if list1.first < list2.first
+       result << list1.first
+       list1 = list1[1..-1]
+     else
+       result << list2.first
+       list2 = list2[1..-1]
+     end
+   end
+   return result + list1 + list2
+ end
+end
+
+== Fixed Version, and Analysis of Bug(s)
+
+The only bug I found is in the assignment to list1, on the line marked "Note A".  If the input
+is a two-element array--say, [1, 2]--then the slize [0..size/2] will be the same as the input--e.g., also [1, 2].
+That causes the infinite recursion in the call to merge_sort.
+
+That problem can be fixed by slicing the input as follows:
+
+  list1 = self[0, size/2]
+  list2 = self[size/2, size - size/2]
+
+and by changing the < in the line marked "Note B" to <=.
+
+Here's a version with these fixes:
+
+  def fixed_merge_sort
+    return self if size <= 1                  # Fix for B
+
+    left = self[0, size/2]                    # Fix...
+    right = self[size/2, size - size/2]       # for A
+    list1 = left.merge_sort
+    list2 = right.merge_sort
+    result = []
+    until list1.empty? || list2.empty? do
+      if list1.first < list2.first
+        result << list1.first
+        list1 = list1[1..-1]
+      else
+        result << list2.first
+        list2 = list2[1..-1]
+      end
+    end
+    return result + list1 + list2
+  end
+
+== Nicer Version
+
+The quiz invites me to improve the "readability" of this, so, here's a version which is perhaps more idiomatic to Ruby:
+
+  # Here's a version that is perhaps more idiomatic for Ruby and which may run faster
+  # (because it tries to optimize the rejoining of the sublists).
+  def merge_sort
+    return self if size <= 1
+    pieces = split_for_merge_sort # => [left half, right half which may be one item larger]
+    left = pieces[0].merge_sort
+    right = pieces[1].merge_sort
+    result = left.join_for_merge_sort(right)
+  end
+
+  protected
+
+  # Break up an array into two "equal" halves.
+  # If odd number of elements, second "half" has one more than first "half".
+  # Examples:
+  # [].split => []
+  # [1] => [[], [1]]
+  # [1, 2] => [[1], [2]]
+  def split_for_merge_sort
+    [self[0, size/2], self[size/2, size - size/2]]
+  end
+
+  # Merge two ordered sublists, e.g.:
+  # merge [1, 3], [2, 4] => [1, 2, 3, 4]
+  # ASSUMPTION:  right is not empty (self might be, however)
+  def join_for_merge_sort(right)
+    return self + right if last <= right.first # I.e., all in left must be <= anything in right.
+    result = []
+    until empty? || right.empty? do
+      if first <= right.first
+        result << shift # Easier to read and harmless in this little test, but see "Shifty" article, http://bobhutchison.wordpress.com/2006/09/23/rubys-arrayshift-is-shifty/
+      else
+        result << right.shift
+      end
+    end
+    result + self + right
+  end
+
+== Unit Test / RSpec
+
+Here's the RSpec unit test I wrote for this:
+
+  require "spec_helper"
+
+  describe "Merge Sort Algorithm" do
+    it "should work with even number of elements" do
+      [5, 2].merge_sort.should == [2, 5]
+      [6, 4, 4, 2].merge_sort.should == [2, 4, 4, 6]
+    end
+    it "should work with odd number of elements" do
+      [1].merge_sort.should == [1]
+      [5, 2, 1].merge_sort.should == [1, 2, 5]
+    end
+    it "should work with no elements (empty array)" do
+      [].merge_sort.should == []
+    end
+  end
+
+== Limitations
+
+As originally given the sort is a mix-in to Array.  This may not be the best idea in a large system where
+other gems might define their own "merge_sort" instance method in Array.  In a production system, I'd be more
+inclined to define a MergeSort module implementing the sort entirely in class methods, therefore.
+
+This works on the assumption that the items in the list implement the "<=" operator.  This is true for numbers
+but would not work for a custom class.
+
+The algorithm assumes sorting in ascending order.
+
+Part II of the quiz hits both of these limitations, so, for Part II it might behoove one to come up with
+a sort that uses a comparator of some kind.
+
+== Performance
+
+Before recommending the Nicer Version instead of the simple Fixed Version, one would want to use the Ruby profiler and/or
+Benchmark package.
