@@ -106,11 +106,18 @@ The quiz invites me to improve the "readability" of this, so, here's a version w
 
 == Unit Test / RSpec
 
-Here's the RSpec unit test I wrote for this:
+To run spec/part1_spec.rb:
+
+  cd quiz
+  rake spec
+
+(this will also run the part2 stuff I'm currently working on).
+
+Here's part1_spec.rb:
 
   require "spec_helper"
 
-  describe "Merge Sort Algorithm" do
+  describe "Part 1" do
     it "should work with even number of elements" do
       [5, 2].merge_sort.should == [2, 5]
       [6, 4, 4, 2].merge_sort.should == [2, 4, 4, 6]
