@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="8833137b-0463-4249-aa4b-c359a3fdb738" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/extensions.rb" afterPath="$PROJECT_DIR$/lib/extensions.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="quiz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +48,7 @@
       <file leaf-file-name="extensions.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/extensions.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="26" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.68350667">
+            <state line="27" column="48" selection-start="816" selection-end="816" vertical-scroll-proportion="0.3744428">
               <folding />
             </state>
           </provider>
@@ -515,7 +513,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/extensions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="26" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.68350667">
+        <state line="27" column="48" selection-start="816" selection-end="816" vertical-scroll-proportion="0.3744428">
           <folding />
         </state>
       </provider>

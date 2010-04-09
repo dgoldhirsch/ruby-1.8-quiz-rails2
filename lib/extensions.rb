@@ -1,11 +1,11 @@
 class Array
 
   # Here's the algorithm as given on the quiz,
-  # with its two infinite loop bugs.
+  # with its two infinite loops.
   def bad_merge_sort
-    return self if size < 1
+    return self if size < 1                   # Bug 1
 
-    list1 = self[0..(size/2)].merge_sort
+    list1 = self[0..(size/2)].merge_sort      # Bug 2
     list2 = self[(size/2)+1..-1].merge_sort
     result = []
     until list1.empty? || list2.empty? do
@@ -22,10 +22,10 @@ class Array
 
   # This fixes the critical problems of bad_merge_sort without additional refactoring.
   def fixed_merge_sort
-    return self if size <= 1
+    return self if size <= 1                  # Fix 1
 
-    left = self[0, size/2]
-    right = self[size/2, size - size/2]
+    left = self[0, size/2]                    # Fix...
+    right = self[size/2, size - size/2]       # 2
     list1 = left.merge_sort
     list2 = right.merge_sort
     result = []
