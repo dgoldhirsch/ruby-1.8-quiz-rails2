@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="8833137b-0463-4249-aa4b-c359a3fdb738" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/haircolor_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/eyecolor.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quiz.rb" afterPath="$PROJECT_DIR$/quiz.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/eyecolor_spec.rb" afterPath="$PROJECT_DIR$/spec/eyecolor_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="quiz.iws" />
@@ -66,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eyecolor_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="eyecolor_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/eyecolor_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="9" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+            <state line="13" column="4" selection-start="517" selection-end="517" vertical-scroll-proportion="0.4031008">
               <folding />
             </state>
           </provider>
@@ -84,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eyecolor.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="eyecolor.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/eyecolor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="22" selection-start="245" selection-end="245" vertical-scroll-proportion="0.62015504">
+            <state line="54" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/spec/hair_spec.rb" />
         <option value="$PROJECT_DIR$/lib/haircolor.rb" />
         <option value="$PROJECT_DIR$/quiz.rb" />
-        <option value="$PROJECT_DIR$/spec/eyecolor_spec.rb" />
         <option value="$PROJECT_DIR$/lib/eyecolor.rb" />
+        <option value="$PROJECT_DIR$/spec/eyecolor_spec.rb" />
       </list>
     </option>
   </component>
@@ -466,7 +466,7 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="810" extended-state="0" />
+    <frame x="42" y="22" width="1440" height="810" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -609,13 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/eyecolor_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/ruby/1.8/singleton.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="7" selection-start="1981" selection-end="1981" vertical-scroll-proportion="0.0">
@@ -625,7 +618,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/eyecolor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="22" selection-start="245" selection-end="245" vertical-scroll-proportion="0.62015504">
+        <state line="54" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/eyecolor_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="517" selection-end="517" vertical-scroll-proportion="0.4031008">
           <folding />
         </state>
       </provider>
