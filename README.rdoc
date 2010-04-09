@@ -141,4 +141,6 @@ a sort that uses a comparator of some kind.
 == Performance
 
 Before recommending the Nicer Version instead of the simple Fixed Version, one would want to use the Ruby profiler and/or
-Benchmark package.
+Benchmark package.  Note that the Nicer Version attempts to optimize the joining of sublists in the case where the left
+portion is clearly before the right portion (see line marked "Note C").  This may or may not make the code run faster--we would
+find out only by running the profiler.
