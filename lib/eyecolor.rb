@@ -23,6 +23,10 @@ class Eyecolor
     Turquoise.instance
   end
 
+  def <=> other
+    position <=> other.position
+  end
+
   def to_s
     self.class.name
   end
@@ -38,10 +42,6 @@ class Turquoise < Eyecolor; end
 
 class Eyecolor
   @@order = [Red.instance, Blue.instance, Turquoise.instance, Brown.instance, Green.instance]
-
-  def <=> other
-    position <=> other.position
-  end
 
   protected
   
