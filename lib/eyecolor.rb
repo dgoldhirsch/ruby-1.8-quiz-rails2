@@ -55,6 +55,8 @@ class Eyecolor
     position <=> other.position
   end
 
+  protected
+  
   # Return index within @@order.  E.g.:  @@red.position => 0, @@blue.position => 1, @@turquoise.position => 2
   def position
     @@order.find_index(self)

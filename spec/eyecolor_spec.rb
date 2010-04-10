@@ -52,6 +52,10 @@ describe "Eye Color" do
     @input.sort.should == @expected
   end
 
+  it "should not allow calls to Eyecolor.new" do
+    lambda {Eyecolor.new(:mud)}.should raise_error
+  end
+
   private
 
   def same color, another
