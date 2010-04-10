@@ -1,6 +1,8 @@
 require 'singleton'
 
 class Eyecolor
+  include Singleton
+  
   def self.red
     Red.instance
   end
@@ -28,25 +30,11 @@ class Eyecolor
   private_class_method :new  # Make sure no one instantiates an Eyecolor object
 end
 
-class Red < Eyecolor
-  include Singleton
-end
-
-class Blue < Eyecolor
-  include Singleton
-end
-
-class Green  < Eyecolor
-  include Singleton
-end
-
-class Brown < Eyecolor
-  include Singleton
-end
-
-class Turquoise < Eyecolor
-  include Singleton
-end
+class Red < Eyecolor; end
+class Blue < Eyecolor; end
+class Green  < Eyecolor; end
+class Brown < Eyecolor; end
+class Turquoise < Eyecolor; end
 
 class Eyecolor
   @@order = [Red.instance, Blue.instance, Turquoise.instance, Brown.instance, Green.instance]

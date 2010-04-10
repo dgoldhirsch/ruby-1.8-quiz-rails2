@@ -86,7 +86,7 @@
       <file leaf-file-name="eyecolor.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/eyecolor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="24" selection-start="397" selection-end="416" vertical-scroll-proportion="0.48430493">
+            <state line="36" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="0.6457399">
               <folding />
             </state>
           </provider>
@@ -139,8 +139,8 @@
         <option value="$PROJECT_DIR$/quiz.rb" />
         <option value="$PROJECT_DIR$/spec/quiz_spec.rb" />
         <option value="$PROJECT_DIR$/README.rdoc" />
-        <option value="$PROJECT_DIR$/lib/eyecolor.rb" />
         <option value="$PROJECT_DIR$/spec/eyecolor_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/eyecolor.rb" />
       </list>
     </option>
   </component>
@@ -602,7 +602,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/eyecolor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="24" selection-start="397" selection-end="416" vertical-scroll-proportion="0.48430493">
+        <state line="36" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="0.6457399">
           <folding />
         </state>
       </provider>
