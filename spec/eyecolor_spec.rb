@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-  @@order = [Red.instance, Blue.instance, Turquoise.instance, Brown.instance, Green.instance]
 
 describe "Eye Color" do
   before(:each) do
@@ -10,7 +9,6 @@ describe "Eye Color" do
 
   it "red <=>" do
     same Eyecolor.red, Eyecolor.red
-    before Eyecolor.red, Eyecolor.red
     before Eyecolor.red, Eyecolor.blue
     before Eyecolor.red, Eyecolor.turquoise
     before Eyecolor.red, Eyecolor.brown
